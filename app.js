@@ -9,6 +9,7 @@ const btns = document.querySelectorAll(".btn");
 btns.forEach(function (btn) {
     btn.addEventListener('click', (e) => {
         const btnEvent = e.currentTarget.classList;
+
         //specify how each button behaves according the class found in the classlist when a button is clicked
         if(btnEvent.contains('decrease')){
            count--;
@@ -20,6 +21,7 @@ btns.forEach(function (btn) {
            count = 0;
         }
         value.textContent = count;
+        
         //change the color to denote the different counter changes
         if(count > 0){
             value.style.color = 'green';
