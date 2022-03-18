@@ -10,7 +10,7 @@ btns.forEach(function (btn) {
     btn.addEventListener('click', (e) => {
         const btnEvent = e.currentTarget.classList;
 
-        //specify how each button behaves according the class found in the classlist when a button is clicked
+        //specify how each button behaves according to the class found in the classlist when a button is clicked
         if(btnEvent.contains('decrease')){
            count--;
         }
